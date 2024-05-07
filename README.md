@@ -7,11 +7,11 @@ every website has two parts -  a front end and a back end.
 - the ``back-end`` is the part that powers the front end it's behind the scenes and is mainly about storing data in databases and providing it to the front end 
 
 So, Web Development jobs fall into three main categories 
-- 1. front-end development 
-- 2. back-end development and 
-- 3. full-stack development which involves both front-end and back-end development 
+1. ``front-end development`` 
+2. ``back-end development`` and 
+3. ``full-stack development`` which involves both front-end and back-end development 
 
-front-end developers use html css and javascript to build front-ends
+front-end developers use html css and javascript to build front-ends.
 
 - ``HTML`` - HyperText Markup Language - used to define the building blocks of our web pages
 - ``CSS`` - Cascading Stylesheet - used for styling web pages and making them beautiful
@@ -23,6 +23,12 @@ front-end developers use html css and javascript to build front-ends
 - resources can be web pages also called html documents
 - they can be images video files fonts and so on.
 
-there are two pieces involved here the browser also called the client and the computer or computers that host our target website we refer to these as web servers or servers.
+there are two pieces involved here 
+- the browser also called the ``client` and
+- the computer or computers that host our target website we refer to these as ``web servers`` or ``servers``.
 
-``http (hypertext transfer protocol)`` - is a language that clients and servers use to talk to each other. it's not a programming language, it's just a plain textual language for communicating over the internet. 
+#### HTTP (HyperText Transfer Protocol)
+ 
+ ``HTTP`` is a language that clients and servers use to talk to each other. it's not a programming language, it's just a plain textual language for communicating over the internet.
+
+ ``HTTPS`` - which is http with encryption
