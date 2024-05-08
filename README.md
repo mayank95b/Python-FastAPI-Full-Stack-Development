@@ -32,3 +32,6 @@ there are two pieces involved here
  ``HTTP`` is a language that clients and servers use to talk to each other. it's not a programming language, it's just a plain textual language for communicating over the internet.
 
  ``HTTPS`` - which is http with encryption
+
+
+ 
