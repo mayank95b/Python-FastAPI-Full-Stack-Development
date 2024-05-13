@@ -8,6 +8,7 @@
 function setConvert() {
   var num1 = parseFloat(document.getElementById('num1').value);
   let weight_in_kg = num1 * 0.457 
-  document.getElementById('Result').innerHTML = 'Weight in Kg: ' + weight_in_kg+ "Kg";
-
+  var resultElement = document.getElementById('Result');
+  resultElement.innerHTML = 'Weight in Kg:' + weight_in_kg+ "Kg";
+  resultElement.style.color = 'green'; // Set the color to green
 }
