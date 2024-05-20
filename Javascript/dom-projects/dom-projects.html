@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>DOM Projects</title>
+    <style>
+            body {
+                    font-family: Arial;
+                }
+
+            .subscribe-button {
+                border: none;
+                background-color: black;
+                color: white;
+                padding-top: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 10px;
+                font-weight: bold;
+                border-radius: 50px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            .is-subscribed {
+                background-color: lightgray;
+                color: black;
+            }
+            
+    </style>
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button onclick="
+    subscribe();
+    " class="js-subscribe-button subscribe-button">Subscribe</button>
+
+    <script>
+        function subscribe() {
+            const buttonElement = document.querySelector('.js-subscribe-button');
+            if (buttonElement.innerText === 'Subscribe') {
+                buttonElement.innerHTML = 'Subscribed';
+                buttonElement.classList.add('is-subscribed');
+            } else {
+                buttonElement.innerHTML = 'Subscribe';
+                buttonElement.classList.remove('is-subscribed')
+            }
+        }
+    </script>
+</body>
+</html>
