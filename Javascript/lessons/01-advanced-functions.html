@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Functions</title>
+</head>
+<body>
+  <script>
+  
+    // Hoisting --> feature  we can call a function before we created it.
+    greeting();  
+    function greeting() {
+      console.log('hello');
+    }
+    greeting();
+
+    const num = 2;
+    const function1 = function() {
+      console.log('hello2');
+    };
+
+    console.log(function1);
+    console.log(typeof function1);
+    function1();
+
+    // Example of method (function saved inside an object)
+    const object1 = {
+      num: 2,
+      fun: function greeting() {  
+        console.log('hello3');
+      }
+    };
+
+    // Passing a function into another function
+    function run(param) {
+      param();
+    }
+    run(function() {
+      console.log('Hello4');
+    });
+
+    // Asynchronous Code - wont't wait for a line to finish before going to the next line
+    // setTimeout is the only part that is asynchronous rest all are synchronous
+    /**
+    setTimeout(function() {
+      console.log('timeout');
+    },3000);
+    **/
+
+    console.log('next line');
+
+    // Synchronous Code - will wait for one line to finish before going to the next line.
+    
+    /**
+    
+    setInterval(function() {
+      console.log('interval')
+    }, 3000);
+    
+    **/
+
+    // .forEach() is the preferred way to loop through an array
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach(function(value, index) { 
+      if (value === 'wash dishes') {
+        return;   // return does same thing as continue in for loop
+      }
+      console.log(index);
+      console.log(value);
+    });
+
+    // if we need to  use break; Then it's better to use a regular for loop. 
+
+    // Regular function 
+    const regularFunction = function() {
+      console.log('regular function')
+    }
+
+    // Arrow function implementation - it mostly work the same as regular function
+
+    const arrowFunction = () => {
+      console.log('Arrow function');
+    };
+    arrowFunction();
+
+    // One line arrow function
+    const oneLine = () => 2 + 3;
+    console.log(oneLine());
+
+    const object2 = {
+      method: () => {
+
+      },
+      // shorthand method  -- easier to read than an arrow fucntion
+      method() {
+
+      }
+    };
+
+  </script>
+</body>
+</html>

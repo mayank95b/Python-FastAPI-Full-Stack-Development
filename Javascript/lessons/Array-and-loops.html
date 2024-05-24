@@ -1,30 +1,30 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <title>Arrays and Loops</title>
- </head>
- <body>
-    <script>
-        const myArray = [10, 20, 30, 'hello', {name: 'tyson'}, [1,2]];
-        console.log(myArray);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Arrays and Loops</title>
+</head>
+<body>
+   <script>
+      const myArray = [10, 20, 30, 'hello', {name: 'tyson'}, [1,2]];
+      console.log(myArray);
 
-        console.log(myArray[1]);
-        myArray[0] = 99;
-        console.log(myArray);
-        console.log(myArray.length)
+      console.log(myArray[1]);
+      myArray[0] = 99;
+      console.log(myArray);
+      console.log(myArray.length)
 
-        myArray.push(100)   //--> This will add 100 at the end of an Array
+      myArray.push(100)   //--> This will add 100 at the end of an Array
 
-        myArray.splice(0,1) // This will remove one value from from index 0
+      myArray.splice(0,1) // This will remove one value from from index 0
 
-        // while Loop
+      // while Loop
 
-        let i =1;
+      let i =1;
 
-        while(i <= 5) {
-         console.log(i);
-         i +=1;
-        }
+      while(i <= 5) {
+      console.log(i);
+      i +=1;
+      }
 
       // For Loop
 
@@ -55,7 +55,13 @@
          console.log(numDoubled);
       }
 
+      const array1 = [1, 2, 3];
+      const array2 = array1.slice();
+      array2.push(4);
+      console.log(array1);
+      console.log(array2);
 
-    </script>
- </body>
- </html>
+
+   </script>
+</body>
+</html>
